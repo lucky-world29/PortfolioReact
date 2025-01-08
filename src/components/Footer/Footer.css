@@ -1,0 +1,139 @@
+/* General Footer Styling */
+.footer {
+  background-color: #111111;
+  color: #e0e0e0;
+  font-size: 1rem;
+  padding: 50px 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  background-color: #181818;
+}
+
+/* Footer Title */
+.footer-title {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  transition: color 0.4s ease;
+}
+
+.footer-title:hover {
+  color: #ff6347;
+  letter-spacing: 4px;
+}
+
+/* Footer Icons */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.footer-icons .icon-link {
+  font-size: 2.5rem;
+  color: #e0e0e0;
+  margin: 0 1rem;
+  transition: transform 0.3s ease, color 0.4s ease, filter 0.4s ease;
+}
+
+/* Facebook Icon */
+.footer-icons .icon-link[aria-label="Facebook"]:hover {
+  color: #4267B2; /* Facebook Blue */
+  transform: scale(1.3) rotate(15deg);
+}
+
+/* Twitter (X) Icon */
+.footer-icons .icon-link[aria-label="Twitter"]:hover {
+  color: #000000; /* Black for X */
+  transform: scale(1.3) rotate(15deg);
+}
+
+/* Instagram Icon */
+.footer-icons .icon-link[aria-label="Instagram"]:hover {
+  color: #E4405F; /* Instagram Red */
+  transform: scale(1.3) rotate(15deg);
+}
+
+/* LinkedIn Icon */
+.footer-icons .icon-link[aria-label="LinkedIn"]:hover {
+  color: #0077B5; /* LinkedIn Blue */
+  transform: scale(1.3) rotate(15deg);
+}
+
+/* Footer Text */
+.footer-text {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #b0b0b0;
+  transition: color 0.4s ease;
+}
+
+.footer-text:hover {
+  color: #eaeaea;
+}
+
+/* Footer Item */
+.footer-item {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-item i {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+  color: #007bff;
+  transition: transform 0.3s ease, color 0.4s ease;
+}
+
+.footer-item:hover i {
+  transform: translateY(-6px) rotate(15deg);
+  color: #ffffff;
+}
+
+/* Footer Links */
+.footer a {
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #ff6347;
+  text-shadow: 0 2px 6px rgba(255, 99, 71, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-title {
+    font-size: 1.3rem;
+  }
+
+  .footer-icons { 
+    margin: 10px 0;
+  }
+
+  .footer-item {
+    flex-direction: column;
+  }
+}

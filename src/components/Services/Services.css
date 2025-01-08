@@ -1,0 +1,101 @@
+/* Basic Styling */
+.services {
+  background: #333333; /* Dark background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.5s ease-in-out;
+  padding: 30px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards; /* Animation to fade in */
+}
+
+.services:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  background-color: #444444; /* Slightly lighter dark background on hover */
+}
+
+/* Keyframe animation for fading in and sliding up */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Individual Service Card */
+.service-card {
+  border: none;
+  outline: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px); /* Initially moved down for animation */
+  animation: slideIn 0.5s ease forwards; /* Animation for cards */
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframe animation for service card sliding in */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Icon inside service card */
+.service-card .icon {
+  height: 70px;
+  width: 70px;
+  background-color: lightgray;
+  color: black;
+  padding: 12px;
+  font-size: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.service-card:hover .icon {
+  background-color: black;
+  color: white;
+}
+
+/* Service Card Title */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #fff; /* Title color to white */
+}
+
+/* Service Card Text */
+.card-text {
+  color: grey;
+}
+
+/* Additional Responsive Design */
+@media (max-width: 768px) {
+  .services {
+    padding: 20px;
+  }
+  
+  .service-card {
+    margin-bottom: 20px; /* Space between service cards on smaller screens */
+  }
+}

@@ -1,0 +1,101 @@
+/* General Styles for the Portfolio Section */
+.portfolio {
+    background: #000000; /* Black background */
+    color: #ffffff; /* White text color for contrast */
+    padding: 50px 0;
+    text-align: center; /* Center content */
+  }
+  
+  /* Gradient Text Effect */
+  .text-gradient {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text; /* For Chrome, Safari, and older WebKit browsers */
+    -moz-background-clip: text; /* For older Firefox versions */
+    background-clip: text; /* Standard property for modern browsers */
+    -webkit-text-fill-color: transparent; /* Ensures text appears clipped properly in WebKit */
+  }
+  
+  /* Portfolio Card Styling */
+  .portfolio-card {
+    background: #1f1f1f; /* Darker background for cards */
+    color: #ffffff; /* White text color */
+    border: 1px solid #333333; /* Subtle border */
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Add filter transition for more dynamics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Default shadow */
+    position: relative; /* For 3D effect */
+  }
+  
+  .portfolio-card:hover {
+    transform: translateY(-15px) rotateX(5deg) rotateY(5deg); /* 3D hover effect with rotation */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6); /* Larger shadow on hover for depth */
+    filter: brightness(1.1); /* Slightly brighten on hover */
+  }
+  
+  /* Image Styling */
+  .portfolio-img {
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.8); /* Darken images slightly */
+    transition: filter 0.3s ease; /* Smooth transition for brightness change */
+  }
+  
+  .portfolio-card:hover .portfolio-img {
+    filter: brightness(1); /* Brighter image on hover */
+  }
+  
+  /* Card Title */
+  .card-title {
+    color: #ff6347; /* Highlighted title color */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .portfolio-card:hover .card-title {
+    color: #ffd700; /* Golden color on hover */
+  }
+  
+  /* Button Gradient */
+  .btn-gradient {
+    background: linear-gradient(90deg, #ff6347, #ff4500); /* Red-orange gradient */
+    border: none;
+    color: #fff; /* White text color for the button */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+  }
+  
+  .btn-gradient:hover {
+    background: linear-gradient(90deg, #ff4500, #ff6347); /* Reverse gradient on hover */
+    transform: scale(1.1); /* Slight scale-up effect */
+  }
+  
+  /* Text for Muted Content */
+  .text-muted {
+    color: #d3d3d3; /* Lighter gray for secondary text */
+  }
+  
+  /* Heading Styles */
+  h2 {
+    color: #ffffff; /* White color for headings */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .portfolio-card {
+      margin-bottom: 20px; /* Space out cards for small screens */
+    }
+  
+    .portfolio-img {
+      height: 150px; /* Adjust image height for small screens */
+    }
+  }
+  

@@ -1,0 +1,120 @@
+/* About Section General Styling */
+.about {
+  background: #121212; /* Dark black background */
+  color: #f8f9fa; /* Light text for contrast */
+  transform-style: preserve-3d;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.about:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.about.animate-scroll {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Image Styling */
+.about img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about img:hover {
+  transform: scale(1.08) rotateZ(3deg);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Buttons Styling */
+.btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #ff6347, #ff4500); /* Vibrant gradient */
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 99, 71, 0.5); /* Accent shadow */
+}
+
+.btn-outline-secondary {
+  border: 1px solid #6c757d; /* Muted gray */
+  color: #f8f9fa;
+}
+
+.btn-outline-secondary:hover {
+  background: #6c757d; /* Slight background color on hover */
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(108, 117, 125, 0.4);
+}
+
+/* Headings and Text */
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f8f9fa; /* Bright text */
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #d3d3d3; /* Muted gray for secondary text */
+}
+
+.about .about-link {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+.about .about-link:hover {
+  text-decoration: underline;
+  color: #ff6347;
+}
+
+/* Text Column Animation */
+.about h2,
+.about p,
+.about button {
+  transform: translateZ(0);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  opacity: 0;
+}
+
+.about.animate-scroll h2,
+.about.animate-scroll p,
+.about.animate-scroll button {
+  opacity: 1;
+  transform: translateZ(10px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about {
+    text-align: center;
+  }
+
+  .about img {
+    margin-bottom: 20px;
+  }
+}

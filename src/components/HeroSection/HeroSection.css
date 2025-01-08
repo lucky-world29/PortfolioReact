@@ -1,0 +1,95 @@
+.photo-container img {
+  border-radius: 50%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-container img:hover {
+  transform: scale(1.08) rotateZ(3deg);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* Hero Section Styling */
+.hero-section {
+  background: #0d2026; /* Dark black background */
+  color: #f8f9fa; /* Light text for contrast */
+  transform-style: preserve-3d;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section.animate-scroll {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Heading Styling */
+.hero-section h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #ff6347; /* Vibrant primary color */
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #d3d3d3; /* Muted gray for secondary text */
+}
+
+.hero-section .lead {
+  font-size: 1.5rem;
+  color: #ffc107; /* Accent color for lead text */
+}
+
+/* Button Styles */
+.btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #ff6347, #ff4500); /* Vibrant gradient */
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 99, 71, 0.5); /* Accent shadow */
+}
+
+.btn-outline-secondary {
+  border: 1px solid #6c757d; /* Muted gray */
+  color: #f8f9fa;
+}
+
+.btn-outline-secondary:hover {
+  background: #6c757d; /* Slight background color on hover */
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(108, 117, 125, 0.4);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .photo-container img {
+    margin-bottom: 20px;
+  }
+}

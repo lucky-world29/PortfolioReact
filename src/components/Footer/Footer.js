@@ -8,25 +8,64 @@ const Footer = () => {
       <div className="container">
         <h5 className="footer-title">Aloha</h5>
         <p className="footer-text">
-      
-        Hi, I’m Lucky—a software developer who thrives at the intersection of creativity and technology.
-<br/>With a solid foundation in mathematics and expertise in Java, React.js, and Spring Boot, I specialize in building user-centric solutions that inspire and perform.
-<br/>From crafting intuitive, responsive designs to engineering scalable backend systems, I bring innovation, precision, and passion to every line of code.
-<br/>Let’s turn ideas into impactful digital experiences together!
+
+          Hi, I’m Lucky—a software developer who thrives at the intersection of creativity and technology.
+          <br />With a solid foundation in mathematics and expertise in Java, React.js, and Spring Boot, I specialize in building user-centric solutions that inspire and perform.
+          <br />From crafting intuitive, responsive designs to engineering scalable backend systems, I bring innovation, precision, and passion to every line of code.
+          <br />Let’s turn ideas into impactful digital experiences together!
         </p>
         <div className="footer-icons">
-          <a href="https://www.facebook.com/abinash.behera.9674227" className="icon-link" aria-label="Facebook">
+          <a
+            href="https://www.facebook.com/abinash.behera.9674227"
+            className="icon-link"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="bi bi-facebook"></i>
           </a>
-          <a href="https://x.com/yoyoking9898" className="icon-link" aria-label="Twitter">
+
+          <a
+            href="https://x.com/lucky_world29"
+            className="icon-link"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="bi bi-twitter"></i>
           </a>
-          <a href="https://www.instagram.com/lucky_world29/?hl=en" className="icon-link" aria-label="Instagram">
+
+          <a
+            href="https://www.instagram.com/lucky_world29/?hl=en"
+            className="icon-link"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="bi bi-instagram"></i>
           </a>
-          <a href="www.linkedin.com/in/abinashbehera9898" className="icon-link" aria-label="LinkedIn">
+
+          <a
+            href="https://www.linkedin.com/in/abinashbehera9898"
+            className="icon-link"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="bi bi-linkedin"></i>
           </a>
+
+          <a
+            href="https://github.com/lucky-world29"  // <-- replace with your actual GitHub link
+            className="icon-link"
+            aria-label="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bi bi-github"></i>
+          </a>
+
+
         </div>
         <div className="footer-item">
           <i className="bi bi-geo-alt"></i>

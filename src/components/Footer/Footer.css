@@ -74,6 +74,15 @@
   transform: scale(1.3) rotate(15deg);
 }
 
+
+/* GitHub Icon */
+.footer-icons .icon-link[aria-label="GitHub"]:hover {
+  color: white; /* Change icon color to white on hover */
+  transform: scale(1.3) rotate(15deg);
+}
+
+
+
 /* Footer Text */
 .footer-text {
   font-size: 0.85rem;

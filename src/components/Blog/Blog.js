@@ -6,28 +6,54 @@ const blogPosts = [
   {
     id: 1,
     title: "5 Tips for Better Web Design",
-    description:
-      "Learn how to create user-friendly and visually appealing web designs with these essential tips.",
+    description: "Learn how to create user-friendly and visually appealing web designs with these essential tips.",
     date: "December 20, 2024",
     link: "/blog/5-tips-for-better-web-design",
   },
   {
     id: 2,
     title: "Understanding React Hooks",
-    description:
-      "A beginner's guide to understanding and using React hooks effectively in your projects.",
+    description: "A beginner's guide to understanding and using React hooks effectively in your projects.",
     date: "November 15, 2024",
     link: "/blog/understanding-react-hooks",
   },
   {
     id: 3,
     title: "The Future of Mobile Development",
-    description:
-      "Explore the latest trends and technologies shaping the future of mobile app development.",
+    description: "Explore the latest trends and technologies shaping the future of mobile app development.",
     date: "October 5, 2024",
     link: "/blog/future-of-mobile-development",
   },
+  {
+    id: 4,
+    title: "Mastering JavaScript ES6 Features",
+    description: "Understand and master modern JavaScript features like arrow functions, destructuring, and modules.",
+    date: "September 10, 2024",
+    link: "/blog/mastering-es6",
+  },
+  {
+    id: 5,
+    title: "Building a Portfolio with React",
+    description: "Step-by-step guide to create an impressive portfolio website using React and Tailwind CSS.",
+    date: "August 18, 2024",
+    link: "/blog/portfolio-with-react",
+  },
+  {
+    id: 6,
+    title: "Introduction to TypeScript",
+    description: "Discover why TypeScript is gaining popularity and how it can improve your JavaScript projects.",
+    date: "July 25, 2024",
+    link: "/blog/introduction-to-typescript",
+  },
+  {
+    id: 7,
+    title: "Optimizing Website Performance",
+    description: "Learn strategies to make your website load faster and provide a better user experience.",
+    date: "June 12, 2024",
+    link: "/blog/optimizing-website-performance",
+  },
 ];
+
 
 const Blog = () => {
   const location = useLocation();

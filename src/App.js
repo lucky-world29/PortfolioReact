@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/HeroSection/HeroSection";
 import About from "./components/About/About";
-import Services from "./components/Services/Services";
+import Skills from "./components/Skills/Skills";
 import Blog from "./components/Blog/Blog";
 import Project from "./components/Project/Project";
 import Footer from "./components/Footer/Footer";
@@ -38,8 +38,8 @@ function App() {
                                 <section id="about">
                                     <About footerRef={footerRef} />
                                 </section>
-                                <section id="services">
-                                    <Services />
+                                <section id="Skills">
+                                    <Skills />
                                 </section>
                                 <section id="project">
                                     <div ref={projectRef}>

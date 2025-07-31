@@ -19,7 +19,7 @@ const projects = [
     title: "Creative Portfolio",
     description: "A stunning portfolio site showcasing modern, minimalist design to highlight creative work beautifully.",
     image: "https://mir-s3-cdn-cf.behance.net/projects/404/ad8b93199083179.Y3JvcCwzODM2LDMwMDEsNzUwLDA.png",
-    link: "#"
+    link: "https://coruscating-mermaid-d1ef87.netlify.app/"
   },
   {
     title: "GreenCart",

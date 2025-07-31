@@ -1,0 +1,84 @@
+/* Section Background */
+.skills {
+  background-color: #000;
+  padding: 60px 0;
+}
+
+/* Heading (already explained above) */
+.skills-heading {
+  color: #ff3c3c;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.skills-heading:hover {
+  transform: scale(1.1);
+  color: #ff6347;
+  text-shadow: 0 0 10px rgba(255, 99, 71, 0.4);
+}
+
+/* Skill Card Styling */
+.service-card {
+  background-color: #111;
+  border: none;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  background-color: #1e1e1e;
+  box-shadow: 0 0 20px rgba(255, 60, 60, 0.3);
+}
+
+/* Icon */
+.service-card .icon {
+  height: 70px;
+  width: 70px;
+  background-color: #ff3c3c;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.service-card:hover .icon {
+  transform: scale(1.15);
+  background-color: #fff;
+  color: #ff3c3c;
+}
+
+/* Text */
+.card-title {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #aaa;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills {
+    padding: 40px 15px;
+  }
+
+  .service-card {
+    margin-bottom: 20px;
+  }
+}

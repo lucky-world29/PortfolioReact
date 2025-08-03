@@ -45,7 +45,7 @@ const HeroSection = () => {
           <div className="col-md-6">
             <div className="photo-container">
               <img
-                src="https://i.pinimg.com/736x/9d/22/ff/9d22ff5cc190fc46d56509f5b2d86e55.jpg"
+                src="https://i.pinimg.com/736x/9d/22/ff/9d22ff5cc190fc46d56509f5b2d86e55.jpg" 
                 alt="Abinash"
                 className="img-fluid rounded-circle shadow"
               />
@@ -75,6 +75,7 @@ const HeroSection = () => {
                 <i className="material-icons me-2">person_add_alt</i>
                 Connect
               </button> */}
+              
             </div> 
           </div>
         </div>

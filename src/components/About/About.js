@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./About.css";
 
+
 const About = ({ footerRef }) => {
     const aboutRef = useRef(null);
 
